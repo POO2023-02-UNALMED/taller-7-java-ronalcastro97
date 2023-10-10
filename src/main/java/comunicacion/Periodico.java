@@ -19,6 +19,14 @@ public class Periodico extends Escrito{
 	public String getPrimicia() {
 		return primicia;
 	}
+	public String toString() {
+		return this.getOrigen() + "\n" + 
+				this.getTitulo() + "\n" + 
+				this.getAutor() + "\n" + 
+				this.getPaginas() + "\n" + 
+				this.getFecha() + "\n" + 
+				this.getPrimicia();
+	}
 	public void setPrimicia(String primicia) {
 		this.primicia = primicia;
 	}
@@ -29,14 +37,12 @@ public class Periodico extends Escrito{
 		this.interpretacion = interpretacion;
 	}
 	public int palabrasTotales(int parametro) {	
-		return 0;
+		return getPaginas()*parametro*10;
 	}
 	public String interpretacion() {
-		return null;
+		return this.interpretacion();
 	}
-	public String toString() {
-		return null;
-	}
+
 	
 
 }

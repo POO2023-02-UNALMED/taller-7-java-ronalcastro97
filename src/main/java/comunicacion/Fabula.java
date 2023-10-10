@@ -28,12 +28,16 @@ public class Fabula extends Escrito{
 	}
 
 	public int palabrasTotales(int parametro) {	
-		return 0;
+		return getPaginas()*parametro*1;
 	}
 	public String interpretacion() {
-		return null;
+		return this.getInterpretacion();
 	}
 	public String toString() {
-		return null;
+		return this.getOrigen() + "\n" + 
+				this.getTitulo() + "\n" + 
+				this.getAutor() + "\n" + 
+				this.getPaginas() + "\n" + 
+				this.getEnsenanza();
 	}
 }

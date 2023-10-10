@@ -15,6 +15,18 @@ public class Tesis extends Escrito{
 		this.interpretacion=interpretacion;
 		
 	}
+	public String toString() {
+		return this.getOrigen() + "\n" + 
+				this.getTitulo() + "\n" +
+				this.getAutor() + "\n" +
+				this.getPaginas() + "\n" +
+				this.getIdea() + "\n" +
+				this.getArgumentos().length + "\n" +
+				this.getConclusion() + "\n" + 
+				this.getReferencias();
+				
+				
+	}
 	public String getIdea() {
 		return idea;
 	}
@@ -46,14 +58,12 @@ public class Tesis extends Escrito{
 		this.interpretacion = interpretacion;
 	}
 	public int palabrasTotales(int parametro) {	
-		return 0;
+		return getPaginas()*parametro*5;
 	}
 	public String interpretacion() {
-		return null;
+		return this.interpretacion();
 	}
-	public String toString() {
-		return null;
-	}
+
 	
 	
 }

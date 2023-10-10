@@ -46,7 +46,7 @@ public class Libro extends Escrito{
 	public void setInterpretacion(String interpretacion) {
 		this.interpretacion = interpretacion;
 	}	
-	public int PalabrasTotales(int parametro) {	
+	public int palabrasTotales(int parametro) {	
 		return 0;
 	}
 	public String interpretacion() {

@@ -50,7 +50,7 @@ public class Libro extends Escrito{
 		return getPaginas()*parametro*2;
 	}
 	public String interpretacion() {
-		return this.getInterpretacion();
+		return this.interpretacion();
 	}
 	public String toString() {
 		return this.getOrigen() + "\n" + 

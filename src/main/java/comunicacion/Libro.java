@@ -54,7 +54,7 @@ public class Libro extends Escrito{
 	}
 	public String toString() {
 		return this.getOrigen() + "\n" + 
-				this.getTitulo() + "\\n" + 	
+				this.getTitulo() + "\n" + 	
 				this.getAutor() + "\n" + 
 				this.getPaginas() + "\n" + 
 				this.getCo_autor() + "\n" + 

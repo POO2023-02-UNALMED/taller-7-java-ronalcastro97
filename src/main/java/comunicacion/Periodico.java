@@ -40,7 +40,7 @@ public class Periodico extends Escrito{
 		return getPaginas()*parametro*10;
 	}
 	public String interpretacion() {
-		return this.interpretacion();
+		return this.getInterpretacion();
 	}
 
 	

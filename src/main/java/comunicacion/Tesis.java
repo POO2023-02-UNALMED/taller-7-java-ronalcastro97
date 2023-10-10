@@ -61,7 +61,7 @@ public class Tesis extends Escrito{
 		return getPaginas()*parametro*5;
 	}
 	public String interpretacion() {
-		return this.interpretacion();
+		return this.getInterpretacion();
 	}
 
 	

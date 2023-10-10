@@ -9,7 +9,7 @@ public class Libro extends Escrito{
 	public Libro(String origen, String titulo, String autor, int paginas,String co_autor,String editorial,String edicion,String interpretacion) {
 		super(origen, titulo, autor, paginas);
 		this.co_autor=co_autor;
-		this.edicion=editorial;
+		this.editorial=editorial;
 		this.edicion=edicion;
 		this.interpretacion=interpretacion;
 
@@ -50,7 +50,7 @@ public class Libro extends Escrito{
 		return getPaginas()*parametro*2;
 	}
 	public String interpretacion() {
-		return this.interpretacion;
+		return this.getInterpretacion();
 	}
 	public String toString() {
 		return this.getOrigen() + "\n"+
